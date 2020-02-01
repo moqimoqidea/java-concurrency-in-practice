@@ -40,6 +40,8 @@
 
         <!-- jcip-annotations -->
         <jcip-annotations.version>1.0</jcip-annotations.version>
+        <!-- javax.servlet-api -->
+        <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
     </properties>
 
 
@@ -132,6 +134,13 @@
             <groupId>net.jcip</groupId>
             <artifactId>jcip-annotations</artifactId>
             <version>${jcip-annotations.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${javax.servlet-api.version}</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
