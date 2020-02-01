@@ -37,6 +37,9 @@
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
         <maven-assembly-plugin.version>3.0.0</maven-assembly-plugin.version>
         <maven-surefire-plugin.version>3.0.0-M3</maven-surefire-plugin.version>
+
+        <!-- jcip-annotations -->
+        <jcip-annotations.version>1.0</jcip-annotations.version>
     </properties>
 
 
@@ -128,7 +131,7 @@
         <dependency>
             <groupId>net.jcip</groupId>
             <artifactId>jcip-annotations</artifactId>
-            <version>1.0</version>
+            <version>${jcip-annotations.version}</version>
         </dependency>
     </dependencies>
 
