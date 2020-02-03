@@ -1,6 +1,6 @@
 package com.moqi.a03.a0314;
 
-import javax.xml.ws.Holder;
+import com.moqi.a03.a0315.Holder;
 
 /**
  * StuffIntoPublic
