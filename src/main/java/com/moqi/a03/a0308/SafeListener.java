@@ -4,6 +4,7 @@ package com.moqi.a03.a0308;
  * SafeListener
  * <p/>
  * Using a factory method to prevent the this reference from escaping during construction
+ * 使用工厂方法来防止 this 引用在构造过程中逸出
  *
  * @author Brian Goetz and Tim Peierls
  */

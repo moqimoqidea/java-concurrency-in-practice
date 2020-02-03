@@ -7,6 +7,7 @@ import java.util.Set;
  * Secrets
  * <p>
  * Publishing an object
+ * 发布一个对象
  *
  * @author Brian Goetz and Tim Peierls
  */

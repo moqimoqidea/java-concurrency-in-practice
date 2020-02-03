@@ -4,6 +4,7 @@ package com.moqi.a03.a0301;
  * NoVisibility
  * <p/>
  * Sharing variables without synchronization
+ * 在没有同步的情况下共享变量（不要这么做）
  *
  * @author Brian Goetz and Tim Peierls
  */

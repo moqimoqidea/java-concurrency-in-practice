@@ -6,6 +6,7 @@ import net.jcip.annotations.NotThreadSafe;
  * MutableInteger
  * <p/>
  * Non-thread-safe mutable integer holder
+ * 非线程安全的可变整数类
  *
  * @author Brian Goetz and Tim Peierls
  */

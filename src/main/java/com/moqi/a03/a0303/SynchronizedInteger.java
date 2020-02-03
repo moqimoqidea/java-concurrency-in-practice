@@ -7,6 +7,7 @@ import net.jcip.annotations.ThreadSafe;
  * SynchronizedInteger
  * <p/>
  * Thread-safe mutable integer holder
+ * 线程安全的可变整数类
  *
  * @author Brian Goetz and Tim Peierls
  */

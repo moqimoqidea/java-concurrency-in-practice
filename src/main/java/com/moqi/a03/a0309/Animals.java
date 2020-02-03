@@ -6,6 +6,7 @@ import java.util.*;
  * Animals
  * <p/>
  * Thread confinement of local primitive and reference variables
+ * 基本类型的局部变量与引用变量的线程封闭性
  *
  * @author Brian Goetz and Tim Peierls
  */
