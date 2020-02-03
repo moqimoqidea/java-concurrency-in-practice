@@ -13,6 +13,7 @@ import java.math.BigInteger;
  * SynchronizedFactorizer
  * <p>
  * Servlet that caches last result, but with unnacceptably poor concurrency
+ * 这个 Servlet 能正确地缓存最新的计算结果，但并发性却非常糟糕（不要这么做）
  *
  * @author Brian Goetz and Tim Peierls
  */

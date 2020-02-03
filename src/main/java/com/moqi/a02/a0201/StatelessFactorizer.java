@@ -9,6 +9,7 @@ import java.math.BigInteger;
  * StatelessFactorizer
  * <p>
  * A stateless servlet
+ * 一个无状态的 Servlet
  *
  * @author Brian Goetz and Tim Peierls
  */

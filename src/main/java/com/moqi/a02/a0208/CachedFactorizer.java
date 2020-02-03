@@ -13,6 +13,7 @@ import java.math.BigInteger;
  * CachedFactorizer
  * <p/>
  * Servlet that caches its last request and result
+ * 缓存最近执行因数分解的数值及其计算结果的 Servlet
  *
  * @author Brian Goetz and Tim Peierls
  */

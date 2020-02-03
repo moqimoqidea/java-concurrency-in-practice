@@ -5,6 +5,7 @@ import net.jcip.annotations.ThreadSafe;
 
 /**
  * Sequence
+ * 线程安全的数值序列生成器
  *
  * @author Brian Goetz and Tim Peierls
  */

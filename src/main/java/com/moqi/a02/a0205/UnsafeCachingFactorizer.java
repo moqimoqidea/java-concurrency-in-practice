@@ -13,6 +13,7 @@ import java.util.concurrent.atomic.AtomicReference;
  * UnsafeCachingFactorizer
  * <p>
  * Servlet that attempts to cache its last result without adequate atomicity
+ * 这个 Servlet 在没有足够原子性保证的情况下对其最近计算结果进行缓存（不要这么做）
  *
  * @author Brian Goetz and Tim Peierls
  */

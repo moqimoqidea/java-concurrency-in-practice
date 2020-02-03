@@ -13,6 +13,7 @@ import java.util.concurrent.atomic.AtomicLong;
  * CountingFactorizer
  * <p>
  * Servlet that counts requests using AtomicLong
+ * 使用 AtomicLong 类型的变量来统计已处理请求的数量
  *
  * @author Brian Goetz and Tim Peierls
  */

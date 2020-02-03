@@ -12,6 +12,7 @@ import java.math.BigInteger;
  * UnsafeCountingFactorizer
  * <p>
  * Servlet that counts requests without the necessary synchronization
+ * 在没有同步的情况下统计已处理请求数量的 Servlet （不要这么做）
  *
  * @author Brian Goetz and Tim Peierls
  */

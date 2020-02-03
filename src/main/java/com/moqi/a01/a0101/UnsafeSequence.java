@@ -4,6 +4,7 @@ import net.jcip.annotations.NotThreadSafe;
 
 /**
  * UnsafeSequence
+ * 非线程安全的数值序列生成器
  *
  * @author Brian Goetz and Tim Peierls
  */
