@@ -31,6 +31,8 @@ public class ImprovedList<T> implements List<T> {
 
     // Plain vanilla delegation for List methods.
     // Mutative methods must be synchronized to ensure atomicity of putIfAbsent.
+    // 用于List方法的普通香草委托。
+    // 必须同步可变方法，以确保putIfAbsent的原子性。
 
     @Override
     public int size() {
