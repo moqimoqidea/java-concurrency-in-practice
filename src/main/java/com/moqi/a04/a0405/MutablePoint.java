@@ -1,4 +1,4 @@
-package com.moqi.a04.a0505;
+package com.moqi.a04.a0405;
 
 import net.jcip.annotations.*;
 

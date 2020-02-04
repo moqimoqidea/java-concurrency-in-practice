@@ -2,7 +2,7 @@ package com.moqi.a04.a0404;
 
 import java.util.*;
 
-import com.moqi.a04.a0505.MutablePoint;
+import com.moqi.a04.a0405.MutablePoint;
 import net.jcip.annotations.*;
 
 /**
