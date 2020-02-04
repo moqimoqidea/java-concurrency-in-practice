@@ -1,4 +1,4 @@
-package com.moqi.a04.a0411.a0412;
+package com.moqi.a04.a0412;
 
 import java.util.*;
 import java.util.concurrent.*;
