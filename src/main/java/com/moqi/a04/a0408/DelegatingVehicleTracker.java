@@ -1,9 +1,10 @@
-package com.moqi.a04.a0407;
+package com.moqi.a04.a0408;
 
 import net.jcip.annotations.ThreadSafe;
 
 import java.awt.*;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
@@ -13,6 +14,8 @@ import java.util.concurrent.ConcurrentMap;
  * <p/>
  * Delegating thread safety to a ConcurrentHashMap
  * 将线程安全委托给 ConcurrentHashMap
+ *
+ * getLocations: 返回 locations 的静态拷贝而非实时拷贝
  *
  * @author Brian Goetz and Tim Peierls
  */
@@ -26,8 +29,12 @@ public class DelegatingVehicleTracker {
         unmodifiableMap = Collections.unmodifiableMap(locations);
     }
 
+    /**
+     * Alternate version of getLocations (Listing 4.8)
+     */
     public Map<String, Point> getLocations() {
-        return unmodifiableMap;
+        return Collections.unmodifiableMap(
+                new HashMap<>(locations));
     }
 
     public Point getLocation(String id) {
