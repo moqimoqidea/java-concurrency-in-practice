@@ -41,7 +41,7 @@ import net.jcip.annotations.*;
     }
 
     private static Map<String, MutablePoint> deepCopy(Map<String, MutablePoint> m) {
-        Map<String, MutablePoint> result = new HashMap<String, MutablePoint>();
+        Map<String, MutablePoint> result = new HashMap<>();
 
         for (String id : m.keySet()) {
             result.put(id, new MutablePoint(m.get(id)));
