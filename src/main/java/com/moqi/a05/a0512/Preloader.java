@@ -1,6 +1,6 @@
 package com.moqi.a05.a0512;
 
-import com.moqi.temp.LaunderThrowable;
+import com.moqi.a05.a0513.LaunderThrowable;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
