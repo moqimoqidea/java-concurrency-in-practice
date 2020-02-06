@@ -9,9 +9,9 @@ import java.util.concurrent.*;
  * Memoizer
  * <p/>
  * Final implementation of Memoizer
- * Memoizer 的最终实现
+ * Memoizer 的最终实现，和标准库几乎一致了
  *
- * 和 org.apache.commons.lang3.concurrent.Memoizer 实现几乎完全一致了
+ * @see org.apache.commons.lang3.concurrent.Memoizer
  *
  * @author Brian Goetz and Tim Peierls
  */
