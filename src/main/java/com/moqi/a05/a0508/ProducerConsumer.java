@@ -17,6 +17,9 @@ public class ProducerConsumer {
     private static final int BOUND = 10;
     private static final int N_CONSUMERS = Runtime.getRuntime().availableProcessors();
 
+    /**
+     * 5.9 启用桌面搜索
+     */
     public static void startIndexing(File[] roots) {
         BlockingQueue<File> queue = new LinkedBlockingQueue<File>(BOUND);
         FileFilter filter = new FileFilter() {
