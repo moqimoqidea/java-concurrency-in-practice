@@ -11,6 +11,8 @@ import java.util.concurrent.*;
  * Final implementation of Memoizer
  * Memoizer 的最终实现
  *
+ * 和 org.apache.commons.lang3.concurrent.Memoizer 实现几乎完全一致了
+ *
  * @author Brian Goetz and Tim Peierls
  */
 public class Memoizer<A, V> implements Computable<A, V> {
