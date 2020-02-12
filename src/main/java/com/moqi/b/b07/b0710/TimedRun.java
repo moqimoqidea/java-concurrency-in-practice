@@ -23,13 +23,14 @@ public class TimedRun {
         try {
             task.get(timeout, unit);
         } catch (TimeoutException e) {
-            // task will be cancelled below
+            // task will be cancelled below 接下来任务将被取消
         } catch (ExecutionException e) {
-            // exception thrown in task; rethrow
+            // exception thrown in task; rethrow 如果在任务中抛出了异常，则重新抛出异常
             throw launderThrowable(e.getCause());
         } finally {
-            // Harmless if task already completed
-            task.cancel(true); // interrupt if running
+            // Harmless if task already completed 如果任务已经结束，那么执行取消操作也不会带来任何影响
+            // interrupt if running 如果任务正在运行，那么将被中断
+            task.cancel(true);
         }
     }
 }
