@@ -1,4 +1,4 @@
-package com.moqi.b.b01.b0601;
+package com.moqi.b.b06.b0601;
 
 import java.io.IOException;
 import java.net.ServerSocket;
