@@ -28,6 +28,9 @@ public class PrimeGenerator implements Runnable {
             = new ArrayList<BigInteger>();
     private volatile boolean cancelled;
 
+    /**
+     * 一个仅运行一秒钟的素数生成器
+     */
     static List<BigInteger> aSecondOfPrimes() throws InterruptedException {
         PrimeGenerator generator = new PrimeGenerator();
         EXEC.execute(generator);
