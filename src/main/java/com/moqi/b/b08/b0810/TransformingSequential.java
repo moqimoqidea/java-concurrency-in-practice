@@ -31,7 +31,9 @@ public abstract class TransformingSequential {
 
     public abstract void process(Element e);
 
-
+    /**
+     * 将串行递归转换为并行递归
+     */
     public <T> void sequentialRecursive(List<Node<T>> nodes,
                                         Collection<T> results) {
         for (Node<T> n : nodes) {
