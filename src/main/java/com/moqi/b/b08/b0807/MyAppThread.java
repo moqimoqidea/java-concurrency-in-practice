@@ -36,6 +36,7 @@ public class MyAppThread extends Thread {
 
     public void run() {
         // Copy debug flag to ensure consistent value throughout.
+        // 复制 debug 标志以确保一致的值
         boolean debug = debugLifecycle;
         if (debug) log.log(Level.FINE, "Created " + getName());
         try {
