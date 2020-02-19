@@ -15,7 +15,7 @@ import java.util.List;
  */
 @Immutable
 public class PuzzleNode <P, M> {
-    final P pos;
+    public final P pos;
     final M move;
     final PuzzleNode<P, M> prev;
 
@@ -25,7 +25,7 @@ public class PuzzleNode <P, M> {
         this.prev = prev;
     }
 
-    List<M> asMoveList() {
+    public List<M> asMoveList() {
         List<M> solution = new LinkedList<M>();
         for (PuzzleNode<P, M> n = this; n.move != null; n = n.prev)
             solution.add(0, n.move);
