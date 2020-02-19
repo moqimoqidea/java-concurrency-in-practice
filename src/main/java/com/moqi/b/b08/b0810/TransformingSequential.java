@@ -31,9 +31,6 @@ public abstract class TransformingSequential {
 
     public abstract void process(Element e);
 
-    /**
-     * 将串行递归转换为并行递归
-     */
     public <T> void sequentialRecursive(List<Node<T>> nodes,
                                         Collection<T> results) {
         for (Node<T> n : nodes) {
@@ -42,6 +39,9 @@ public abstract class TransformingSequential {
         }
     }
 
+    /**
+     * 将串行递归转换为并行递归
+     */
     public <T> void parallelRecursive(final Executor exec,
                                       List<Node<T>> nodes,
                                       final Collection<T> results) {
@@ -55,6 +55,9 @@ public abstract class TransformingSequential {
         }
     }
 
+    /**
+     * 等待通过并行方式计算的结果
+     */
     public <T> Collection<T> getParallelResults(List<Node<T>> nodes)
             throws InterruptedException {
         ExecutorService exec = Executors.newCachedThreadPool();
