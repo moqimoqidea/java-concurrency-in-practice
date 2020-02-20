@@ -28,7 +28,7 @@ public class DynamicOrderDeadlock {
         }
     }
 
-    static class DollarAmount implements Comparable<DollarAmount> {
+    public static class DollarAmount implements Comparable<DollarAmount> {
         // Needs implementation
 
         public DollarAmount(int amount) {
@@ -47,7 +47,7 @@ public class DynamicOrderDeadlock {
         }
     }
 
-    static class Account {
+    public static class Account {
         private static final AtomicInteger sequence = new AtomicInteger();
         private final int acctNo;
         private DollarAmount balance;
@@ -73,6 +73,6 @@ public class DynamicOrderDeadlock {
         }
     }
 
-    static class InsufficientFundsException extends Exception {
+    public static class InsufficientFundsException extends Exception {
     }
 }
