@@ -57,6 +57,9 @@ public class PutTakeTest extends TestCase {
         }
     }
 
+    /**
+     * 在 PutTakeTest 中使用的 Producer 和 Consumer 等类
+     */
     class Producer implements Runnable {
         public void run() {
             try {

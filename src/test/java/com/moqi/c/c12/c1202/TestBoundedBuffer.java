@@ -72,6 +72,9 @@ public class TestBoundedBuffer extends TestCase {
         return 0;
     }
 
+    /**
+     * 12-7 测试资源泄露
+     */
     class Big {
         double[] data = new double[100000];
     }
