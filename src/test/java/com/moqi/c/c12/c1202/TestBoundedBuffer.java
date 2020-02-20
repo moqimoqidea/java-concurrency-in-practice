@@ -38,7 +38,7 @@ public class TestBoundedBuffer extends TestCase {
                 try {
                     int unused = bb.take();
                     fail(); // if we get here, it's an error
-                } catch (InterruptedException success) {
+                } catch (InterruptedException ignored) {
                 }
             }
         };
