@@ -53,6 +53,9 @@ public class TestBoundedBuffer extends TestCase {
         }
     }
 
+    /**
+     * 12-3 测试阻塞行为以及对中断的响应性
+     */
     void testLeak() throws InterruptedException {
         SemaphoreBoundedBuffer<Big> bb = new SemaphoreBoundedBuffer<Big>(CAPACITY);
         int heapSize1 = snapshotHeap();
