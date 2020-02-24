@@ -21,8 +21,11 @@ public class TimedPutTakeTest extends PutTakeTest {
         barrier = new CyclicBarrier(nPairs * 2 + 1, timer);
     }
 
+    /**
+     * 12-13 使用 TimedPutTakeTest 的程序
+     */
     public static void main(String[] args) throws Exception {
-        int tpt = 100000; // trials per thread
+        int tpt = 100000; // trials per thread 每个线程中的测试次数
         for (int cap = 1; cap <= 1000; cap *= 10) {
             System.out.println("Capacity: " + cap);
             for (int pairs = 1; pairs <= 128; pairs *= 2) {
