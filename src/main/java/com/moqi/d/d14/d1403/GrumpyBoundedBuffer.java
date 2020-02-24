@@ -38,6 +38,9 @@ class ExampleUsage {
     int SLEEP_GRANULARITY = 50;
     private GrumpyBoundedBuffer<String> buffer;
 
+    /**
+     * 14-4 调用 GrumpyBoundedBuffer 的代码
+     */
     void useBuffer() throws InterruptedException {
         while (true) {
             try {
