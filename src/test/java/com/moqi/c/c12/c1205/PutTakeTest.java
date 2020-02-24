@@ -60,7 +60,7 @@ public class PutTakeTest extends TestCase {
     /**
      * 在 PutTakeTest 中使用的 Producer 和 Consumer 等类
      */
-    class Producer implements Runnable {
+    public class Producer implements Runnable {
         public void run() {
             try {
                 int seed = (this.hashCode() ^ (int) System.nanoTime());
@@ -79,7 +79,7 @@ public class PutTakeTest extends TestCase {
         }
     }
 
-    class Consumer implements Runnable {
+    public class Consumer implements Runnable {
         public void run() {
             try {
                 barrier.await();
