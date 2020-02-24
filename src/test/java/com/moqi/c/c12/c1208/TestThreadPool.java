@@ -19,6 +19,9 @@ public class TestThreadPool extends TestCase {
 
     private final TestingThreadFactory threadFactory = new TestingThreadFactory();
 
+    /**
+     * 12-9 验证线程池扩展能力的测试方法
+     */
     public void testPoolExpansion() throws InterruptedException {
         int MAX_SIZE = 10;
         ExecutorService exec = Executors.newFixedThreadPool(MAX_SIZE);
